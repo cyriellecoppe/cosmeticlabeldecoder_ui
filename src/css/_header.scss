@@ -1,0 +1,66 @@
+/***** NAVBAR *****/
+
+#cld-nav-bar {
+    background-color: map-get($colors, white);
+    box-shadow: 0 1px 10px map-get($colors, cld-black);
+    & .navbar-brand {
+        display: flex;
+        align-items: center;
+        & #cld-logo {
+            width: 30px;
+            height: 30px;
+            margin-right: 5px;
+            background-size: contain;
+            background-image: map-get($get-images-url, logo);
+        }
+        & #cld-brand {
+            font-family: map-get($fonts, logo);
+            font-size: 36px;
+            letter-spacing: -1px;
+            color: map-get($colors, cld-black);
+            &:hover {
+                color: map-get($colors, cld-black);
+            }
+        }
+    }
+
+    & .navbar-toggler {
+        right: 20px;
+        top: 25px;
+        background-color: white;
+    }
+
+    & .navbar-collapse {
+        justify-content: flex-end;
+    }
+
+    & .navbar-nav {
+        a {
+            font-size: small;
+            color: map-get($colors, cld-gray);
+            text-transform: uppercase;
+        }
+        .dropdown-item {
+            &:active {
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+@media (min-width: $media-min-width-md) {
+    #cld-nav-bar{
+        & .nav-link::after {
+            content: '';
+            display: block;
+            margin: auto;
+            height: 1px;
+            width: 0px;
+            transition: width .4s ease-out, background-color .4s ease-out;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+            background: map-get($colors, cld-gray);
+        }
+    }
+}

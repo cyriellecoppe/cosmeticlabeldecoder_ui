@@ -1,0 +1,93 @@
+[
+    {
+        "id": 4,
+        "name": "AQUA",
+        "quality_price_ratio": 3.0,
+        "environmental_score": 3,
+        "products": []
+    },
+    {
+        "id": 31,
+        "name": "BHT",
+        "quality_price_ratio": 1.36,
+        "environmental_score": 1,
+        "products": []
+    },
+    {
+        "id": 17,
+        "name": "BUTYLPARABEN",
+        "quality_price_ratio": 1.36,
+        "environmental_score": 1,
+        "products": []
+    },
+    {
+        "id": 8,
+        "name": "CAPRAE LAC",
+        "quality_price_ratio": 1.77,
+        "environmental_score": 3,
+        "products": []
+    },
+    {
+        "id": 2,
+        "name": "CAPRYLIC",
+        "quality_price_ratio": 1.36,
+        "environmental_score": 2,
+        "products": []
+    },
+    {
+        "id": 3,
+        "name": "CARBOMER",
+        "quality_price_ratio": 1.36,
+        "environmental_score": 2,
+        "products": []
+    },
+    {
+        "id": 25,
+        "name": "CERA MICROCRISTALLINA",
+        "quality_price_ratio": 1.36,
+        "environmental_score": 1,
+        "products": []
+    },
+    {
+        "id": 20,
+        "name": "CETYL ALCOHOL",
+        "quality_price_ratio": 3.0,
+        "environmental_score": 3,
+        "products": []
+    },
+    {
+        "id": 26,
+        "name": "CI",
+        "quality_price_ratio": 1.36,
+        "environmental_score": 1,
+        "products": []
+    },
+    {
+        "id": 32,
+        "name": "CITRIC ACID",
+        "quality_price_ratio": 3.0,
+        "environmental_score": 3,
+        "products": []
+    },
+    {
+        "id": 23,
+        "name": "CITRONELLOL",
+        "quality_price_ratio": 1.36,
+        "environmental_score": 1,
+        "products": []
+    },
+    {
+        "id": 35,
+        "name": "CITRUS MEDICA LIMONUM",
+        "quality_price_ratio": 1.77,
+        "environmental_score": 3,
+        "products": []
+    },
+    {
+        "id": 34,
+        "name": "COCO GLUCOSIDE",
+        "quality_price_ratio": 3.0,
+        "environmental_score": 3,
+        "products": []
+    }
+]

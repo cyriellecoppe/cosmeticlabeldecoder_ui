@@ -1,0 +1,57 @@
+/***** CONTACT *****/
+
+#sub-menu__contact {
+    @include set-sub-menu(contact);
+}
+
+#information, #feedback {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#contact__contact-information {
+    justify-content: center;
+    align-items: center;
+    & .contact__contact-information__block {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    & .fa {
+        margin-right: 10px;
+    }
+    & a {
+        text-decoration: underline;
+        font-style: italic;
+    }
+    & .contact__data {
+        color: map-get($colors, cld-green);
+        margin-left: 10px;
+    }
+    & .contact__contact-information--location {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+#contact__send-feedback-form {
+    & .contact__send-feedback-form__field-row {
+        margin-top: 2%;
+    }
+    & .contact__send-feedback-form__error {
+        padding: 0;
+    }
+    & small, & .btn {
+        margin: 2%;
+    }
+    & .focus--error {
+        border-color: map-get($colors, cld-dark-red);
+    }
+}
+
+.required::after {
+    content: "*";
+    color: map-get($colors, cld-green);
+    font-weight: bold;
+    font-size: 20px;
+}

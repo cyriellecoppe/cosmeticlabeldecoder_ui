@@ -1,0 +1,17 @@
+/***** IMAGES *****/
+
+$get-path-to-images: "../images/";
+
+$get-images-url: (
+    about: url("#{$get-path-to-images}about.jpg"),
+    articleslist: url("#{$get-path-to-images}articleslist.jpg"),
+    blog: url("#{$get-path-to-images}blog.jpg"),
+    contact: url("#{$get-path-to-images}contact.jpg"),
+    database: url("#{$get-path-to-images}database.jpg"),
+    ingredientslist: url("#{$get-path-to-images}ingredientslist.jpg"),
+    logo: url("#{$get-path-to-images}logo.jpg"),
+    newslist: url("#{$get-path-to-images}newslist.jpg"),
+    notfound: url("#{$get-path-to-images}notfound.jpg"),
+    parallax: url("#{$get-path-to-images}parallax.jpg"),
+    productslist: url("#{$get-path-to-images}productslist.jpg"),
+);

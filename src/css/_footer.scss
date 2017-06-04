@@ -1,0 +1,155 @@
+/***** SUBFOOTER *****/
+
+#sub-footer__container {
+    background-color: map-get($colors, cld-dark-gray);
+    text-align: center;
+    align-items: center;
+    .sub-footer__column {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    p {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+}
+
+.sub-footer__social-icons {
+    color: map-get($colors, cld-light-black);
+    &:hover {
+        text-decoration: none;
+        color: map-get($colors, cld-black);
+    }
+}
+
+@mixin animation--bounce($delay, $icon-color) {
+    animation-name: animation--bounce-#{$icon-color};
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+    animation-delay: $delay;
+}
+
+@mixin keyframes__animation--bounce($icon-color) {
+    @keyframes animation--bounce-#{$icon-color} {
+        0% {
+            transform: translateY(500px);
+            color: map-get($colors, $icon-color);
+        }
+        20% {
+            transform: translateY(-20px);
+            color: map-get($colors, $icon-color);
+        }
+        40% {
+            transform: translateY(30px);
+            color: map-get($colors, $icon-color);
+        }
+        60% {
+            transform: translateY(-5px);
+            color: map-get($colors, $icon-color);
+        }
+        70% {
+            transform: translateY(10px);
+            color: map-get($colors, $icon-color);
+        }
+        80% {
+           transform: translateY(0px);
+           color: map-get($colors, $icon-color);
+        }
+        100% {
+            transform: translateY(0);
+            color: map-get($colors, cld-light-black);
+        }
+    }
+}
+
+.fa-twitter__animation {
+    @include animation--bounce(0s, cld-pink);
+    @include keyframes__animation--bounce(cld-pink);
+}
+
+.fa-facebook__animation {
+    @include animation--bounce(0.10s, cld-orange);
+    @include keyframes__animation--bounce(cld-orange);
+}
+
+.fa-instagram__animation {
+    @include animation--bounce(0.20s, cld-yellow);
+    @include keyframes__animation--bounce(cld-yellow);
+}
+
+.fa-pinterest-p__animation {
+    @include animation--bounce(0.30s, cld-green);
+    @include keyframes__animation--bounce(cld-green);
+}
+
+.fa-envelope__animation {
+    @include animation--bounce(0.40s, cld-blue);
+    @include keyframes__animation--bounce(cld-blue);
+}
+
+#sub-footer__newsletter-information {
+    color: map-get($colors, cld-black);
+    font-weight: bold;
+    &:hover {
+        color: map-get($colors, cld-black);
+    }
+}
+
+#sub-footer__form-newsletter {
+    width: 100%;
+    & > input {
+        display: inline-block;
+    }
+    & > button {
+        margin-top: 1%;
+        width: 100%;
+    }
+}
+
+@media (max-width: $media-max-width-sm) {
+    #sub-footer__container {
+        text-align: left;
+    }
+}
+
+/***** FOOTER *****/
+
+#footer__container {
+    font-size: 14px;
+    text-transform: capitalize;
+    color: map-get($colors, cld-gray);
+    align-items: center;
+    text-align: center;
+    & a {
+        color: map-get($colors, cld-gray);
+    }
+    & .footer__bottom-link {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+#button__back-to-top {
+    border: none;
+    position: fixed;
+    text-align: center;
+    right: 1%;
+    bottom: 0%;
+    z-index: 100;
+    background-color: map-get($colors, cld-gray);
+    height: 35px;
+    width: 35px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    & > i {
+        font-size: 20px;
+        color: map-get($colors, white);
+    }
+    &:hover {
+        background-color: map-get($colors, cld-green);
+    }
+}

@@ -1,0 +1,11 @@
+/***** ABOUT *****/
+
+#sub-menu__about {
+    @include set-sub-menu(about);
+}
+
+dt {
+    color:  map-get($colors, cld-green);
+    margin-top: 20px;
+}
+

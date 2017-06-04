@@ -1,0 +1,114 @@
+[
+    {
+        "id": 8,
+        "name": "BABY & KIDS",
+        "products": [
+            {
+                "id": 7,
+                "name": "CALENDULA SHAMPOO",
+                "image": "http://127.0.0.1:8000/uploads/products/WELEDA_BODY_WASH.jpg",
+                "quality_price_ratio": 1.68
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "BODY CARE",
+        "products": [
+            {
+                "id": 7,
+                "name": "CALENDULA SHAMPOO",
+                "image": "http://127.0.0.1:8000/uploads/products/WELEDA_BODY_WASH.jpg",
+                "quality_price_ratio": 1.68
+            },
+            {
+                "id": 5,
+                "name": "LIP BALM",
+                "image": "http://127.0.0.1:8000/uploads/products/CLARINS_LIP_BALM_riK9cd0.jpg",
+                "quality_price_ratio": 1.04
+            },
+            {
+                "id": 4,
+                "name": "MOISTURIZING CREAM",
+                "image": "http://127.0.0.1:8000/uploads/products/LAVERA_BODY_CREAM_a8yz5kv.jpg",
+                "quality_price_ratio": 1.54
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "FRAGRANCE",
+        "products": [
+            {
+                "id": 6,
+                "name": "ALLURE HOMME",
+                "image": "http://127.0.0.1:8000/uploads/products/CHANEL_ALLURE_HOMME_qftKP7r.jpg",
+                "quality_price_ratio": 1.01
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "HAIR CARE",
+        "products": []
+    },
+    {
+        "id": 2,
+        "name": "MAKEUP",
+        "products": [
+            {
+                "id": 8,
+                "name": "DARK PINK",
+                "image": "http://127.0.0.1:8000/uploads/products/LUSH_MAKEUP.jpg",
+                "quality_price_ratio": 1.41
+            },
+            {
+                "id": 5,
+                "name": "LIP BALM",
+                "image": "http://127.0.0.1:8000/uploads/products/CLARINS_LIP_BALM_riK9cd0.jpg",
+                "quality_price_ratio": 1.04
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "MEN",
+        "products": [
+            {
+                "id": 6,
+                "name": "ALLURE HOMME",
+                "image": "http://127.0.0.1:8000/uploads/products/CHANEL_ALLURE_HOMME_qftKP7r.jpg",
+                "quality_price_ratio": 1.01
+            },
+            {
+                "id": 3,
+                "name": "SHAVING CREAM",
+                "image": "http://127.0.0.1:8000/uploads/products/WELEDA_SHAVING_CREAM_PZ9glQI.jpg",
+                "quality_price_ratio": 1.59
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "name": "SKIN CARE",
+        "products": [
+            {
+                "id": 9,
+                "name": "SOOTHING CLEANSING MILK",
+                "image": "http://127.0.0.1:8000/uploads/products/DR_HAUSCHKA_MILK_U5hgcS3.jpg",
+                "quality_price_ratio": 1.24
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "name": "SUN CARE",
+        "products": []
+    },
+    {
+        "id": 5,
+        "name": "TOOLS",
+        "products": []
+    }
+]
+
