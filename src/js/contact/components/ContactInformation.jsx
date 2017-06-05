@@ -32,7 +32,7 @@ export default function ContactInformation() {
                             CLD project:
                         </span>
                         <a
-                            href="#"
+                            href="https://github.com/cyriellecoppe/cosmeticlabeldecoder_ui"
                             className="contact__data"
                             target="_blank"
                             rel="noopener noreferrer"

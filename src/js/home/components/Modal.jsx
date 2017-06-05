@@ -77,7 +77,7 @@ export default class ModalContainer extends React.Component {
                                 </ul>
                             </div>
                             <div className="text-muted text-right">
-                                Check the <Link to="#">source code</Link> on GitHub. <i className="fa fa-github" aria-hidden="true"></i>
+                                Check the <a href="https://github.com/cyriellecoppe/cosmeticlabeldecoder_ui">source code</a> on GitHub. <i className="fa fa-github" aria-hidden="true"></i>
                             </div>
                         </div>
                         <div className="modal-footer">
