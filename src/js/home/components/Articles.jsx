@@ -91,7 +91,6 @@ export default class ArticlesContainer extends React.Component {
     }
 
     toggleCarousel() {
-        console.log(window.innerWidth)
         if (window.innerWidth < 768) {
             $('#latest-articles__carousel').carousel('pause')
             this.setState({showCarousel: false})
