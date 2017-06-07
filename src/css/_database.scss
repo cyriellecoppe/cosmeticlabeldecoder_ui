@@ -91,7 +91,7 @@
     }
 }
 
-@media (max-width: $media-max-width-xs) {
+@media only screen and (max-width: $media-max-width-xs) {
     #cld-score__container {
         justify-content: flex-start;
         & #cld-score__title {
@@ -100,7 +100,7 @@
     }
 }
 
-@media (max-width: $media-max-width-sm) {
+@media only screen and (max-width: $media-max-width-sm) {
     #cld-score__title, .scores .score-title {
         font-weight: bold;
     }
@@ -233,7 +233,7 @@
     }
 }
 
-@media (max-width: $media-max-width-xs) {
+@media only screen and (max-width: $media-max-width-xs) {
     #database__detailed-ingredient__product-content {
         justify-content: center;
     }

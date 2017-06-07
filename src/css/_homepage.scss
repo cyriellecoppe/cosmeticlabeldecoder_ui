@@ -147,6 +147,12 @@
     justify-content: center;
 }
 
+@media print {
+    #latest-articles__container {
+        display: none;
+    }
+}
+
 /*** NEWS ***/
 
 #latest-news__container {
@@ -184,7 +190,7 @@
 }
 
 
-@media (max-width: $media-max-width-sm) {
+@media print and (max-width: $media-max-width-sm) {
     .latest-news__news-row {
         text-align: left;
     }
