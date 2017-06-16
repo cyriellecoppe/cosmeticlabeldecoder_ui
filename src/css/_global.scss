@@ -157,7 +157,7 @@ h5 {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 15vw;
+    min-height: 20vh;
     background: {
         position: center;
         repeat: no-repeat;
@@ -174,8 +174,8 @@ h5 {
 }
 
 .sub-menu__sub-container {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
     min-height: 40vh;
     max-width: 900px;
 }
