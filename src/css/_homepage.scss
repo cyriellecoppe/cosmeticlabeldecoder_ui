@@ -119,8 +119,10 @@
         & li {
             background-color: map-get($colors, cld-medium-gray);
             border-radius: 20px;
-            max-width: 100px;
-            height: 3px;
+            width: 15px;
+            height: 15px;
+            margin-left: 20px;
+            margin-right: 20px;
             &:hover {
                 background-color: map-get($colors, cld-gray);
             }
