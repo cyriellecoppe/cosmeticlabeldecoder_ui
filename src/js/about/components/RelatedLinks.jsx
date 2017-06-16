@@ -31,27 +31,15 @@ export default function RelatedLinks(props) {
                         name='Placeholder - Creams'
                     />
                     <ListRenderer
-                        url='http://www.thairefresh.ee/kontakt/'
+                        url='http://www.marksdailyapple.com/25-safer-alternatives-to-common-cosmetics/'
                         name='Placeholder - DIY'
                     />
                     <ListRenderer
-                        url='http://www.besthealthmag.ca/best-looks/beauty/how-do-i-know-if-a-product-is-really-natural-or-organic/'
+                        url='https://www.theluckyjukeboxbrigade.com/natural-organic-cosmetics-are-a-user-friendly-choice/'
                         name='Placeholder - Homecare'
                     />
                     <ListRenderer
-                        url='http://www.cbc.ca/stevenandchris/life/natural-makeup-de-coded'
-                        name='Placeholder - Makeup'
-                    />
-                    <ListRenderer
-                        url='http://intreviews.com/natural-cosmetics-safe-use/'
-                        name='Placeholder - Mint'
-                    />
-                    <ListRenderer
-                        url='http://www.aparnatraders.in/herbal-beauty-products.htm'
-                        name='Placeholder - Natural ingredients'
-                    />
-                    <ListRenderer
-                        url='http://vrossis.com/natural-herbal-cosmetics-grid/'
+                        url='http://savetnicablog.blogspot.ca/2014/05/'
                         name='Placeholder - Oil'
                     />
                     <ListRenderer
@@ -59,12 +47,20 @@ export default function RelatedLinks(props) {
                         name='Placeholder - Packaging'
                     />
                     <ListRenderer
-                        url='http://keywordsuggest.org/gallery/1262222.html'
-                        name='Placeholder - Shampoo'
+                        url='http://www.naturallivingideas.com/homemade-makeup-recipes/'
+                        name='Placeholder - Powder'
                     />
                     <ListRenderer
                         url='http://mhsitiger.com/features/2015/03/25/natural-beauty-products/'
                         name='Placeholder - Soap'
+                    />
+                    <ListRenderer
+                        url='https://unsplash.com/'
+                        name='Placeholder - unsplash.com'
+                    />
+                    <ListRenderer
+                        url='https://pixabay.com/'
+                        name='Placeholder - pixabay.com'
                     />
                 </ul>
             </div>
