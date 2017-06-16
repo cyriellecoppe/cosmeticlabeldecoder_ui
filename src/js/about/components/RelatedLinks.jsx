@@ -24,55 +24,6 @@ export default function RelatedLinks(props) {
                 <h4>Images</h4>
             </div>
             <div className="col-md-6">
-                <p className="text-muted">Static</p>
-                <ul>
-                    <ListRenderer
-                        url='http://learn.eartheasy.com/2015/03/allergens-in-natural-beauty-products/'
-                        name='Placeholder - About'
-                    />
-                    <ListRenderer
-                        url='https://www.choice.com.au/health-and-body/beauty-and-personal-care/skin-care-and-cosmetics/articles/natural-and-organic-cosmetics'
-                        name='Placeholder - Blog'
-                    />
-                    <ListRenderer
-                        url='http://www.retailnews.asia/natural-organic-cosmetics-brands-lunch-concept-stores-to-raise-visibility-in-asia/'
-                        name='Placeholder - Blog articles'
-                    />
-                    <ListRenderer
-                        url='http://learn.eartheasy.com/2015/03/allergens-in-natural-beauty-products/'
-                        name='Placeholder - Blog news'
-                    />
-                    <ListRenderer
-                        url='https://www.iconfinder.com/icons/219733/label_price_price_tag_shopping_tag_icon'
-                        name='Placeholder - CLD logo'
-                    />
-                    <ListRenderer
-                        url='http://www.bluemaize.net/im/baby/organic-cosmetics-2.jpg'
-                        name='Placeholder - Contact'
-                    />
-                    <ListRenderer
-                        url='http://ormonica.jp/en/brand-concept/organic-cosme/'
-                        name='Placeholder - Database'
-                    />
-                    <ListRenderer
-                        url='http://lenews.ch/2015/02/19/are-natural-cosmetics-really-better-for-you/'
-                        name='Placeholder - Database ingredients'
-                    />
-                    <ListRenderer
-                        url='https://www.dr.hauschka.com/en_GB/knowledge-base/questions-and-answers/questions-about-sales-channels/'
-                        name='Placeholder - Database products'
-                    />
-                    <ListRenderer
-                        url='http://dev.arcreactions.com/Calgary.isGreen/products/cosmetics/how-natural-are-natural-cosmetics/'
-                        name='Placeholder - Home'
-                    />
-                    <ListRenderer
-                        url='http://joliverwellness.com/cosmetics/'
-                        name='Placeholder - Page-not-found'
-                    />
-                </ul>
-            </div>
-            <div className="col-md-6">
                 <p className="text-muted">Blog</p>
                 <ul>
                     <ListRenderer
@@ -114,6 +65,23 @@ export default function RelatedLinks(props) {
                     <ListRenderer
                         url='http://mhsitiger.com/features/2015/03/25/natural-beauty-products/'
                         name='Placeholder - Soap'
+                    />
+                </ul>
+            </div>
+            <div className="col-md-6">
+                <p className="text-muted">Static</p>
+                <ul>
+                    <ListRenderer
+                        url='https://unsplash.com/'
+                        name='Placeholder - unsplash.com'
+                    />
+                    <ListRenderer
+                        url='https://pixabay.com/'
+                        name='Placeholder - pixabay.com'
+                    />
+                    <ListRenderer
+                        url='https://www.iconfinder.com/icons/219733/label_price_price_tag_shopping_tag_icon'
+                        name='Placeholder - CLD logo'
                     />
                 </ul>
             </div>
