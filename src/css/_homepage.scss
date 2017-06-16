@@ -192,7 +192,7 @@
 }
 
 
-@media print and (max-width: $media-max-width-sm) {
+@media (max-width: $media-max-width-sm) {
     .latest-news__news-row {
         text-align: left;
     }
