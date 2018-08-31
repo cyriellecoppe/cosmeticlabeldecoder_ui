@@ -24,6 +24,9 @@
         color: map-get($colors, white);
         font-weight: bold;
     }
+    & .btn-toolbar {
+        flex-wrap: nowrap;
+    }
 }
 
 .database__row__card-list {

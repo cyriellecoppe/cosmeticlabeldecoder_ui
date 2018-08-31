@@ -27,7 +27,7 @@ export default function WebsiteDesign(props) {
                         tools={[
                             {name: 'HTML5'},
                             {name: 'CSS3'},
-                            {name: 'Bootstrap v4-alpha'},
+                            {name: 'Bootstrap v4.1.3'},
                             {name: 'SASS v4'},
                         ]}
                     />

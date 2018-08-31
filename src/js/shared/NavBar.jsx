@@ -165,7 +165,7 @@ export default class NavBar extends React.Component {
     render() {
         return (
             <nav
-                className="navbar navbar-toggleable-sm sticky-top"
+                className="navbar navbar-expand-sm sticky-top"
                 role="navigation"
                 id="cld-nav-bar"
             >
