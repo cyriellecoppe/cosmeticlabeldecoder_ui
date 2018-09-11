@@ -18,40 +18,30 @@ function CarouselIndicators(props) {
 
 
 function ArticleCard(props) {
-    return (
-        <Link
-            to={"/blog/articles/" + props.article.id}
-            className="col-md-4 col-sm-8"
-            title="Read more about this article"
-        >
-            <img
-                className="latest-articles__article-card__image"
-                alt={props.article.images[0].title}
-                src={props.article.images[0].image}
-            />
-                <h4>{props.article.title}</h4>
-                <p className="latest-articles__article-card__summary">
-                    {props.article.summary}
-                </p>
-        </Link>
-    )
-}
-
-
-function ArticlesRenderer(props) {
-    // Bootstrap class required for first element
-    let classRow = "row justify-content-around text-center carousel-item"
-    if (props.index === 0) {
-        classRow += " active"
+    let classRow = "row justify-content-around text-center"
+    if (props.carousel) {
+        classRow += " carousel-item"
+        if (props.index === 0) {
+            classRow += " active"
+        }
     }
     return (
         <div className={classRow}>
-            {props.articlesList.map((articleItem) =>
-                <ArticleCard
-                    key={articleItem.id}
-                    article={articleItem}
+            <Link
+                to={"/blog/articles/" + props.article.id}
+                className="col-md-4 col-sm-8"
+                title="Read more about this article"    
+            >
+                <img
+                    className="latest-articles__article-card__image"
+                    alt={props.article.images[0].title}
+                    src={props.article.images[0].image}
                 />
-            )}
+                    <h4>{props.article.title}</h4>
+                    <p className="latest-articles__article-card__summary">
+                        {props.article.summary}
+                    </p>
+            </Link>
         </div>
     )
 }
@@ -146,11 +136,12 @@ export default class ArticlesContainer extends React.Component {
                             id="latest-articles__carousel"
                         >
                             <div className="carousel-inner" role="listbox">
-                                {this.state.articles.map((row, index) =>
-                                    <ArticlesRenderer
+                                {this.state.articles[0].map((article, index) =>
+                                    <ArticleCard
                                         key={index}
                                         index={index}
-                                        articlesList={row}
+                                        article={article}
+                                        carousel={true}
                                     />
                                 )}
                             </div>
@@ -164,11 +155,12 @@ export default class ArticlesContainer extends React.Component {
                 return (
                     <div className="container" id="latest-articles__container">
                         <div id="latest-articles__no-carousel">
-                            {this.state.articles.map((row, index) =>
-                                <ArticlesRenderer
+                            {this.state.articles[0].map((article, index) =>
+                                <ArticleCard
                                     key={index}
                                     index={index}
-                                    articlesList={row}
+                                    article={article}
+                                    carousel={false}
                                 />
                             )}
                         </div>
