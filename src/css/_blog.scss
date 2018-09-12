@@ -51,6 +51,10 @@
     }
 }
 
+.blog__card {
+    padding: 20px;
+}
+
 #blog__card-detailed__title {
     color: map-get($colors, cld-green);
     font-size: 20px;

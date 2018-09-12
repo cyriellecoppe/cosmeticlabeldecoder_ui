@@ -18,7 +18,7 @@ export default function CardCondensed(props) {
     return (
         <div className="card">
             {image !== undefined ? image : ''}
-            <div className="card-block">
+            <div className="card-block blog__card">
                 <h4 className="card-title">{card.title}</h4>
                 <p className="card-category">
                     {card.hasOwnProperty('category') ? card.category : ''}

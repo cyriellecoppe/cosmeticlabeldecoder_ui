@@ -77,7 +77,7 @@ export default class CardDetailed extends React.Component {
                                     ) : ''}
                                 </div>
                             </div>
-                            <div className="card-block">
+                            <div className="card-block blog__card">
                                 <div className="text-muted" id="blog__card-detailed__summary">
                                     {this.state.card.summary}
                                 </div>
