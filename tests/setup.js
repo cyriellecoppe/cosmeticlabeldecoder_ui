@@ -1,5 +1,9 @@
 import { JSDOM } from 'jsdom'
 
+import { configure } from 'enzyme'
+import Adapter from 'enzyme-adapter-react-16'
+
+configure({ adapter: new Adapter() })
 
 const dom = new JSDOM('<!doctype html><html><body></body></html>')
 
@@ -19,3 +23,4 @@ global.navigator = {
 }
 
 copyProps(window, global)
+

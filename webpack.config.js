@@ -1,8 +1,8 @@
 'use strict'
 
 const webpack = require('webpack')
-const CompressionPlugin = require('compression-webpack-plugin')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
@@ -15,7 +15,7 @@ const bootstrapPath = path.join(__dirname, 'node_modules/bootstrap')
 module.exports = {
     entry: [path.resolve(srcPath, 'app.js')],
     output: {
-        filename: 'main.[chunkhash].js',
+        filename: 'main.[hash].js',
         path: distPath,
     },
     module: {
@@ -45,18 +45,42 @@ module.exports = {
                     bootstrapPath,
                     srcPath,
                 ],
-                use: ExtractTextPlugin.extract({use: [
+                use: [
+                    MiniCssExtractPlugin.loader,
                     'css-loader',
                     'resolve-url-loader',
                     'sass-loader',
-                ]}),
+                ]
             },
         ],
     },
+    optimization: {
+        minimizer: [
+            new UglifyJsPlugin({
+                test: /\.js$/,
+                uglifyOptions: {
+                    ie8: false,
+                    ecma: 6,
+                    keep_fnames: true,
+                },
+                warningsFilter: (src) => true,
+                sourceMap: true,
+            }),
+            new OptimizeCSSAssetsPlugin({}),
+        ],
+    },
+    devServer: {
+        historyApiFallback: true,
+        proxy: {
+            '/api': 'http://127.0.0.1:8000',
+            '/uploads': 'http://127.0.0.1:8000',
+        },
+    },
     plugins: [
-        new ExtractTextPlugin('main.[contenthash].css'),
+        new MiniCssExtractPlugin({
+            filename: '[name].[hash].css',
+        }),
         new HtmlWebpackPlugin({
-            title: 'Cosmetic Label Decoder',
             template: path.join(srcPath, 'index.html'),
             favicon: path.join(srcPath, 'images/favicon.ico'),
         }),
@@ -65,23 +89,5 @@ module.exports = {
             jQuery: 'jquery',
             Tether: 'tether'
         }),
-        new UglifyJsPlugin({
-            beautify: true,
-            mangle: {
-                screw_ie8: true,
-                keep_fnames: true
-            },
-            compress: {
-                screw_ie8: true
-            },
-            comments: false,
-            test: /\.jsx?$/,
-        }),
-        new webpack.DefinePlugin({
-            'process.env.NODE_ENV': JSON.stringify('production')
-        }),
-        new CompressionPlugin({
-            test: /\.(js|html|css)$/,
-        })
     ],
 }

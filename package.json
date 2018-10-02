@@ -1,76 +1,77 @@
 {
   "name": "cosmetic_label_decoder",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "cosmetic label decoder ui",
   "main": "app.js",
   "scripts": {
-    "dev": "webpack-dev-server --config webpack.config.dev.js --hot --debug",
-    "test": "mocha tests/*.test.js --require babel-register --require tests/setup.js --check-leaks --globals CustomEvent",
+    "dev": "webpack-dev-server --mode development --hot --debug",
+    "test": "mocha tests/*.test.js --require @babel/register --require tests/setup.js --check-leaks --globals CustomEvent",
     "linter": "eslint --config .eslintrc.json --ext .js,.jsx src",
-    "build": "webpack --profile --progress"
+    "build": "webpack --profile --progress --mode production"
   },
   "author": "cyrielle coppe",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cyriellecoppe/cosmeticlabeldecoder_ui"
+  },
   "devDependencies": {
-    "babel-cli": "^6.23.0",
-    "babel-core": "^6.23.1",
-    "babel-loader": "^6.4.0",
-    "babel-preset-env": "^1.5.1",
-    "babel-preset-es2015": "^6.22.0",
-    "babel-preset-react": "^6.23.0",
-    "bootstrap": "^4.0.0-alpha.6",
-    "chai": "^3.5.0",
-    "chai-enzyme": "^0.7.1",
-    "compression-webpack-plugin": "^0.4.0",
-    "css-loader": "^0.27.1",
-    "enzyme": "^2.8.2",
-    "eslint": "^3.19.0",
-    "eslint-config-standard": "^10.2.1",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "bootstrap": "^4.1.3",
+    "chai": "^4.2.0",
+    "chai-enzyme": "^1.0.0-beta.1",
+    "compression-webpack-plugin": "^2.0.0",
+    "css-loader": "^1.0.0",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
+    "eslint": "^5.6.1",
+    "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-node": "^4.2.2",
-    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-react": "^7.0.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "extract-text-webpack-plugin": "^2.1.0",
-    "file-loader": "^0.10.1",
-    "html-webpack-plugin": "^2.28.0",
-    "jquery": "^3.2.1",
-    "jsdom": "^11.0.0",
-    "mocha": "^3.4.1",
-    "mocha-loader": "^1.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jquery": "^3.3.1",
+    "jsdom": "^12.1.0",
+    "mini-css-extract-plugin": "^0.4.3",
+    "mocha": "^5.2.0",
+    "mocha-loader": "^2.0.0",
     "node-sass": "^4.5.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
     "popper.js": "^1.14.4",
-    "react": "^15.4.2",
-    "react-addons-test-utils": "^15.5.1",
-    "react-dom": "^15.5.4",
-    "react-hot-loader": "^1.3.1",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-element-to-jsx-string": "^14.0.1",
+    "react-hot-loader": "^4.3.11",
     "react-router": "^4.1.0",
     "react-router-dom": "^4.1.0",
-    "react-test-renderer": "^15.5.4",
-    "resolve-url-loader": "^2.0.2",
-    "sass-loader": "^6.0.3",
-    "sinon": "^2.3.2",
-    "style-loader": "^0.16.1",
-    "uglify-js": "<3",
-    "uglifyjs-webpack-plugin": "^0.4.3",
-    "url-loader": "^0.5.8",
-    "webpack": "^2.4.1",
-    "webpack-dev-server": "^2.4.1"
+    "react-test-renderer": "^16.5.2",
+    "request": "^2.88.0",
+    "resolve-url-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "sinon": "^6.3.4",
+    "style-loader": "^0.23.0",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "url-loader": "^1.1.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
   },
   "babel": {
     "presets": [
-      "es2015",
-      "react",
       [
-        "env",
+        "@babel/preset-env",
         {
-          "targets": {
-            "browsers": [
-              "last 2 versions"
-            ]
-          }
+          "targets": "last 2 versions"
         }
-      ]
+      ],
+      "@babel/preset-react"
     ]
   }
 }
