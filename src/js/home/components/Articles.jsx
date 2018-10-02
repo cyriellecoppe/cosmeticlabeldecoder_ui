@@ -30,7 +30,7 @@ function ArticleCard(props) {
             <Link
                 to={"/blog/articles/" + props.article.id}
                 className="col-md-4 col-sm-8"
-                title="Read more about this article"    
+                title="Read more about this article"
             >
                 <img
                     className="latest-articles__article-card__image"

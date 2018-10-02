@@ -16,7 +16,9 @@
     },
     "rules": {
         "semi": ["error", "never"],
-        "indent": ["error", 4],
+        "indent": "off",
+        "object-curly-spacing": "off",
+        "react/no-deprecated": "off",
         "comma-dangle": ["error", "only-multiline"],
         "react/prop-types": 0,
         "no-multiple-empty-lines": ["error", {"max": 2}],

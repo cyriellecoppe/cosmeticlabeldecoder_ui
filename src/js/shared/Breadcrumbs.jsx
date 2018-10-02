@@ -22,7 +22,8 @@ export default function Breadcrumbs(props) {
         },
         detailed: {
             title: 'Details',
-            link: '#',  // Already on the right page
+            // Already on the right page
+            link: '#',
         },
         blog: {
             title: 'Blog',
