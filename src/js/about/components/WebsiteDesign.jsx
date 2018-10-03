@@ -27,14 +27,14 @@ export default function WebsiteDesign(props) {
                         tools={[
                             {name: 'HTML5'},
                             {name: 'CSS3'},
-                            {name: 'Bootstrap v4.1.3'},
+                            {name: 'Bootstrap v4'},
                             {name: 'SASS v4'},
                         ]}
                     />
                     <DesignToolsRenderer
                         title='JavaScript libraries'
                         tools={[
-                            {name: 'React v15'},
+                            {name: 'React v16'},
                             {name: 'React Router v4'},
                             {name: 'jQuery v3'},
                         ]}
@@ -42,31 +42,25 @@ export default function WebsiteDesign(props) {
                     <DesignToolsRenderer
                         title='Packaging'
                         tools={[
-                            {name: 'Webpack v2'},
-                            {name: 'NPM v4'},
-                            {name: 'Babel v6'},
+                            {name: 'Webpack v4'},
+                            {name: 'npm v6'},
+                            {name: 'Babel v7'},
                         ]}
                     />
                 </dl>
                 <dl className="col-md-6 sm-col-6">
                     <h4>Back-end</h4>
                     <DesignToolsRenderer
-                        title='Web Server'
-                        tools={[
-                            {name: 'NGINX v1.12'},
-                        ]}
-                    />
-                    <DesignToolsRenderer
                         title='Web Framework'
                         tools={[
-                            {name: 'Django v1.11'},
+                            {name: 'Django v2'},
                             {name: 'Django REST Framework v3'},
                         ]}
                     />
                     <DesignToolsRenderer
                         title='Database'
                         tools={[
-                            {name: 'PostgreSQL v9.6'},
+                            {name: 'PostgreSQL v10'},
                         ]}
                     />
                 </dl>
